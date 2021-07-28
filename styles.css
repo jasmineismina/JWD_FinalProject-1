@@ -1,1 +1,12 @@
 
+ .form-group[type=text] {
+  width: 100%;
+  padding: 20px 70px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.container{
+  padding: 20px 70px;
+font-weight:bold;
+}
