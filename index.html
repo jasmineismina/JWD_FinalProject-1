@@ -4,42 +4,30 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 <title>Task Manager</title>
-  <style>
-    #parent {
-    position:relative;
-    height:100px;
-    width:200px;
-    padding:0;
-}
-p {
-    position:absolute;
-    margin:0;
-    padding:5px;
-}
-p:nth-child(1) {
-    top:0;
-    left:0;    
-}
-p:nth-child(2) {
-    top:0;
-    right:0;
-}
-p:nth-child(3) {
-    bottom:0;
-    left:0;
-}
-p:nth-child(4) {
-    bottom:0;
-    right:0;
+<style>
+  .form-group[type=text] {
+  width: 100%;
+  padding: 20px 70px;
+  margin: 8px 0;
+  box-sizing: border-box;
+
+
 }
 
-  </style>
+.container{
+  padding: 20px 70px;
+font-weight:bold;
+
+}
+</style>
 </head>
+
 <body>
+  <div class="container">
 <form>
   <div class="form-group">
     <label for="name">NAME</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input type="text" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp">
   </div>
   <div class="form-group">
     <label for="description">DESCRIPTION</label>
@@ -54,19 +42,28 @@ p:nth-child(4) {
     <input type="text" class="form-control" id="exampleInputPassword1">
   </div>
 
-  <div class="form-group form-check" id="parent">
-    <p>STATUS</p>
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">TODO</label>
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">IN PROGRESS</label>
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">REVIEW</label>
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">DONE</label>
-  </div>
-  <button type="submit" class="btn btn-primary">CREATE TASK</button>
-</form>
+  <p>STATUS</p>
+  <div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+  <label class="form-check-label" for="inlineRadio1">TODO</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+  <label class="form-check-label" for="inlineRadio2">IN PROGRESS</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+  <label class="form-check-label" for="inlineRadio3">REVIEW</label>
+</div>
+  <div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+  <label class="form-check-label" for="inlineRadio4">DONE</label>
+</div>
 
+<br>
+<br>
+<center><button type="submit" class="btn btn-primary">CREATE TASK</button></center>
+</form>
+</div>
 </body>
 </html>
