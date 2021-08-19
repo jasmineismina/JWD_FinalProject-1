@@ -1,5 +1,5 @@
 
-const TaskManager = newTaskManager();
+const TaskManager = newTaskManager(0);
 console.log(TaskManager.tasks);
 
 
