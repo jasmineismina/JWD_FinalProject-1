@@ -1,5 +1,6 @@
 class TaskManager {
-  this.tasks()
+  constructor(
+  this.tasks) = ();
 
 }
 
