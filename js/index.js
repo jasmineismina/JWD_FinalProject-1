@@ -1,6 +1,6 @@
 
 
-console.log(tasks);
+console.log(TaskManager.tasks);
 
 
 
